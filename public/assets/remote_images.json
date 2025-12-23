@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "images": {
+    "home_hero": "assets/img/dk.jpg",
+    "feature_main": "https://im.583k.com/static/picture/gongneng.png",
+    "steps": "https://im.583k.com/static/picture/steps.png"
+  }
+}
