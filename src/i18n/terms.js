@@ -201,103 +201,103 @@ export default {
         "terms.s14.email": "Email"
     },
     vi: {
-        "terms.title": "Thoa thuan dich vu nguoi dung JDChat",
-        "terms.updateDate": "Ngay cap nhat",
-        "terms.effectiveDate": "Ngay hieu luc",
-        "terms.welcome": "Chao mung ban den voi JDChat va cac dich vu cua chung toi!",
+        "terms.title": "Thỏa thuận dịch vụ người dùng JDChat",
+        "terms.updateDate": "Ngày cập nhật",
+        "terms.effectiveDate": "Ngày hiệu lực",
+        "terms.welcome": "Chào mừng bạn đến với JDChat và các dịch vụ của chúng tôi!",
 
         // Section 1: Definitions
-        "terms.s1.title": "1. Cac dinh nghia",
-        "terms.s1.p1": "Nguoi dung ca nhan JDChat la nguoi dang ky tai khoan JDChat bang so dien thoai va ma xac nhan, hoac dang nhap bang tai khoan ben thu ba duoc JDChat cho phep.",
-        "terms.s1.p2": "Nguoi dung to chuc doanh nghiep JDChat la nguoi dung sau khi duoc quan tri vien uy quyen tao cau truc to chuc doanh nghiep JDChat, moi thanh vien tai xuong va dang ky lam nguoi dung cuoi.",
-        "terms.s1.p3": "Quan tri vien to chuc doanh nghiep JDChat la thanh vien to chuc duoc uy quyen hoac chi dinh, co quyen quan ly to chuc doanh nghiep.",
-        "terms.s1.p4": "Du lieu kiem soat to chuc doanh nghiep la thong tin va du lieu lien quan den nguoi dung doanh nghiep duoc gui hoac tao ra trong qua trinh su dung dich vu JDChat.",
-        "terms.s1.p5": "Nguoi xu ly thong tin ca nhan la to chuc hoac ca nhan co quyen quyet dinh muc dich va phuong thuc xu ly thong tin ca nhan.",
+        "terms.s1.title": "1. Các định nghĩa",
+        "terms.s1.p1": "Người dùng cá nhân JDChat là người đăng ký tài khoản JDChat bằng số điện thoại và mã xác nhận, hoặc đăng nhập bằng tài khoản bên thứ ba được JDChat cho phép.",
+        "terms.s1.p2": "Người dùng tổ chức doanh nghiệp JDChat là người dùng sau khi được quản trị viên ủy quyền tạo cấu trúc tổ chức doanh nghiệp JDChat, mời thành viên tải xuống và đăng ký làm người dùng cuối.",
+        "terms.s1.p3": "Quản trị viên tổ chức doanh nghiệp JDChat là thành viên tổ chức được ủy quyền hoặc chỉ định, có quyền quản lý tổ chức doanh nghiệp.",
+        "terms.s1.p4": "Dữ liệu kiểm soát tổ chức doanh nghiệp là thông tin và dữ liệu liên quan đến người dùng doanh nghiệp được gửi hoặc tạo ra trong quá trình sử dụng dịch vụ JDChat.",
+        "terms.s1.p5": "Người xử lý thông tin cá nhân là tổ chức hoặc cá nhân có quyền quyết định mục đích và phương thức xử lý thông tin cá nhân.",
 
         // Section 2: Contracting Parties
-        "terms.s2.title": "2. Cac ben ky ket",
-        "terms.s2.p1": "Thoa thuan nay la giua nguoi dung ca nhan JDChat, nguoi dung to chuc doanh nghiep (bao gom quan tri vien va nguoi dung cuoi), va nha cung cap dich vu JDChat.",
-        "terms.s2.p2": "Nguoi dung ca nhan JDChat, nguoi dung to chuc doanh nghiep, quan tri vien va nguoi dung cuoi duoc goi chung la 'Nguoi dung' hoac 'Ban'.",
-        "terms.s2.p3": "Nha cung cap dich vu JDChat bao gom Cong ty TNHH Cong nghe Minggushan Vu Han, goi chung la 'JDChat' hoac 'Chung toi'.",
+        "terms.s2.title": "2. Các bên ký kết",
+        "terms.s2.p1": "Thỏa thuận này là giữa người dùng cá nhân JDChat, người dùng tổ chức doanh nghiệp (bao gồm quản trị viên và người dùng cuối), và nhà cung cấp dịch vụ JDChat.",
+        "terms.s2.p2": "Người dùng cá nhân JDChat, người dùng tổ chức doanh nghiệp, quản trị viên và người dùng cuối được gọi chung là 'Người dùng' hoặc 'Bạn'.",
+        "terms.s2.p3": "Nhà cung cấp dịch vụ JDChat bao gồm Công ty TNHH Công nghệ Minggushan Vũ Hán, gọi chung là 'JDChat' hoặc 'Chúng tôi'.",
 
         // Section 3: Agreement Content
-        "terms.s3.title": "3. Noi dung va hieu luc thoa thuan",
-        "terms.s3.p1": "Thoa thuan nay bao gom noi dung chinh, chinh sach, quy tac, thong bao da hoac se duoc cong bo, bao gom Chinh sach bao mat JDChat.",
-        "terms.s3.p2": "JDChat co quyen sua doi thoa thuan nay khi can thiet. Thay doi se duoc thong bao qua ung dung JDChat. Neu khong dong y, ban nen ngung su dung dich vu ngay lap tuc.",
+        "terms.s3.title": "3. Nội dung và hiệu lực thỏa thuận",
+        "terms.s3.p1": "Thỏa thuận này bao gồm nội dung chính, chính sách, quy tắc, thông báo đã hoặc sẽ được công bố, bao gồm Chính sách bảo mật JDChat.",
+        "terms.s3.p2": "JDChat có quyền sửa đổi thỏa thuận này khi cần thiết. Thay đổi sẽ được thông báo qua ứng dụng JDChat. Nếu không đồng ý, bạn nên ngừng sử dụng dịch vụ ngay lập tức.",
 
         // Section 4: Service Content
-        "terms.s4.title": "4. Noi dung dich vu",
-        "terms.s4.sub1.title": "(1) Noi dung dich vu JDChat",
-        "terms.s4.sub1.p1": "Dich vu JDChat bao gom ung dung khach hang, tai lieu, dich vu am thanh/video va cac tinh nang khac duoc cung cap qua trang web chinh thuc.",
-        "terms.s4.sub1.p2": "JDChat cung cap nhieu phien ban ung dung bao gom iOS, Android va cac he dieu hanh khac. Nguoi dung co the chon cai dat phien ban phu hop voi thiet bi.",
-        "terms.s4.sub1.p3": "Ban dong y rang JDChat co the gui thong tin (bao gom thuong mai va phi thuong mai) qua thong bao, SMS, push va cac phuong thuc khac.",
-        "terms.s4.sub2.title": "(2) Cac hinh thuc dich vu JDChat",
-        "terms.s4.sub2.intro": "Dich vu JDChat bao gom dich vu cho nguoi dung ca nhan va dich vu van phong di dong truc tuyen cho nguoi dung to chuc doanh nghiep.",
-        "terms.s4.sub2.personal.title": "Dich vu nguoi dung ca nhan JDChat",
-        "terms.s4.sub2.personal.desc": "Dich vu cho nguoi dung ca nhan dang ky bang so dien thoai va ma xac nhan, bao gom hien thi thong tin ca nhan, nhan tin tuc thoi va ket ban.",
-        "terms.s4.sub2.enterprise.title": "Dich vu to chuc doanh nghiep JDChat",
-        "terms.s4.sub2.enterprise.desc": "Dich vu noi quan tri vien tao cau truc to chuc doanh nghiep, moi thanh vien va cau hinh ung dung van phong de so hoa to chuc va kinh doanh.",
+        "terms.s4.title": "4. Nội dung dịch vụ",
+        "terms.s4.sub1.title": "(1) Nội dung dịch vụ JDChat",
+        "terms.s4.sub1.p1": "Dịch vụ JDChat bao gồm ứng dụng khách hàng, tài liệu, dịch vụ âm thanh/video và các tính năng khác được cung cấp qua trang web chính thức.",
+        "terms.s4.sub1.p2": "JDChat cung cấp nhiều phiên bản ứng dụng bao gồm iOS, Android và các hệ điều hành khác. Người dùng có thể chọn cài đặt phiên bản phù hợp với thiết bị.",
+        "terms.s4.sub1.p3": "Bạn đồng ý rằng JDChat có thể gửi thông tin (bao gồm thương mại và phi thương mại) qua thông báo, SMS, push và các phương thức khác.",
+        "terms.s4.sub2.title": "(2) Các hình thức dịch vụ JDChat",
+        "terms.s4.sub2.intro": "Dịch vụ JDChat bao gồm dịch vụ cho người dùng cá nhân và dịch vụ văn phòng di động trực tuyến cho người dùng tổ chức doanh nghiệp.",
+        "terms.s4.sub2.personal.title": "Dịch vụ người dùng cá nhân JDChat",
+        "terms.s4.sub2.personal.desc": "Dịch vụ cho người dùng cá nhân đăng ký bằng số điện thoại và mã xác nhận, bao gồm hiển thị thông tin cá nhân, nhắn tin tức thời và kết bạn.",
+        "terms.s4.sub2.enterprise.title": "Dịch vụ tổ chức doanh nghiệp JDChat",
+        "terms.s4.sub2.enterprise.desc": "Dịch vụ nơi quản trị viên tạo cấu trúc tổ chức doanh nghiệp, mời thành viên và cấu hình ứng dụng văn phòng để số hóa tổ chức và kinh doanh.",
 
         // Section 5: Software License
-        "terms.s5.title": "5. Giay phep phan mem JDChat",
-        "terms.s5.p1": "Uy quyen. JDChat cap cho ban giay phep khong chuyen nhuong, khong doc quyen de su dung dich vu JDChat theo thoa thuan nay. Ban co the tao mot ban sao luu.",
-        "terms.s5.p2": "Han che su dung. Tru khi co quy dinh khac, dich vu JDChat chi duoc su dung cho muc dich phi thuong mai. Ban dong y khong sao chep, ban hoac ban lai bat ky phan nao cua dich vu.",
-        "terms.s5.p3": "Quyen bao luu. Tat ca cac quyen khong duoc cap ro rang trong thoa thuan nay deu thuoc ve JDChat. Ban phai xin phep bang van ban cho cac quyen bo sung.",
+        "terms.s5.title": "5. Giấy phép phần mềm JDChat",
+        "terms.s5.p1": "Ủy quyền. JDChat cấp cho bạn giấy phép không chuyển nhượng, không độc quyền để sử dụng dịch vụ JDChat theo thỏa thuận này. Bạn có thể tạo một bản sao lưu.",
+        "terms.s5.p2": "Hạn chế sử dụng. Trừ khi có quy định khác, dịch vụ JDChat chỉ được sử dụng cho mục đích phi thương mại. Bạn đồng ý không sao chép, bán hoặc bán lại bất kỳ phần nào của dịch vụ.",
+        "terms.s5.p3": "Quyền bảo lưu. Tất cả các quyền không được cấp rõ ràng trong thỏa thuận này đều thuộc về JDChat. Bạn phải xin phép bằng văn bản cho các quyền bổ sung.",
 
         // Section 6: Software Updates
-        "terms.s6.title": "6. Cap nhat phan mem",
-        "terms.s6.p1": "De cai thien trai nghiem nguoi dung, JDChat se lien tuc phat trien dich vu moi va cung cap cap nhat phan mem, bao gom thay the, sua doi, nang cap.",
-        "terms.s6.p2": "De dam bao bao mat va chuc nang phan mem, JDChat co the cap nhat phan mem ma khong can thong bao truoc.",
-        "terms.s6.p3": "Ban hieu va dong y rang JDChat co the thong bao cap nhat qua thong bao va nhat ky thay doi tren trang web va ung dung.",
+        "terms.s6.title": "6. Cập nhật phần mềm",
+        "terms.s6.p1": "Để cải thiện trải nghiệm người dùng, JDChat sẽ liên tục phát triển dịch vụ mới và cung cấp cập nhật phần mềm, bao gồm thay thế, sửa đổi, nâng cấp.",
+        "terms.s6.p2": "Để đảm bảo bảo mật và chức năng phần mềm, JDChat có thể cập nhật phần mềm mà không cần thông báo trước.",
+        "terms.s6.p3": "Bạn hiểu và đồng ý rằng JDChat có thể thông báo cập nhật qua thông báo và nhật ký thay đổi trên trang web và ứng dụng.",
 
         // Section 7: Account Registration
-        "terms.s7.title": "7. Dang ky va quan ly tai khoan",
-        "terms.s7.intro": "Ban co the dang nhap va su dung dich vu JDChat thong qua dang ky so dien thoai ca nhan, tai khoan ben thu ba duoc uy quyen hoac tai khoan doanh nghiep.",
+        "terms.s7.title": "7. Đăng ký và quản lý tài khoản",
+        "terms.s7.intro": "Bạn có thể đăng nhập và sử dụng dịch vụ JDChat thông qua đăng ký số điện thoại cá nhân, tài khoản bên thứ ba được ủy quyền hoặc tài khoản doanh nghiệp.",
 
         // Section 8: Usage Rules
-        "terms.s8.title": "8. Quy tac su dung dich vu JDChat",
-        "terms.s8.intro": "Ban dong y khong su dung dich vu nay cho bat ky hoat dong bat hop phap hoac khong phu hop nao.",
-        "terms.s8.sub1.title": "(1) Quy tac dang noi dung",
-        "terms.s8.sub1.desc": "La nguoi dung JDChat, ban bi cam tao, sao chep hoac dang noi dung vi pham hien phap, gay nguy hai an ninh quoc gia, vu khong nguoi khac hoac phat tan tin don.",
-        "terms.s8.sub2.title": "(2) Quy tac su dung phan mem",
-        "terms.s8.sub2.desc": "Ban dong y khong can thiep hoac lam hong bat ky phan mem, phan cung hoac thiet bi truyen thong nao, va khong su dung phan mem hoac plugin ben thu ba trai phep.",
-        "terms.s8.sub3.title": "(3) Quy tac hanh vi",
-        "terms.s8.sub3.desc": "Ban khong duoc gui thong tin sai, lua dao nguoi khac, xam pham quyen nguoi khac hoac tham gia bat ky hoat dong bat hop phap nao.",
+        "terms.s8.title": "8. Quy tắc sử dụng dịch vụ JDChat",
+        "terms.s8.intro": "Bạn đồng ý không sử dụng dịch vụ này cho bất kỳ hoạt động bất hợp pháp hoặc không phù hợp nào.",
+        "terms.s8.sub1.title": "(1) Quy tắc đăng nội dung",
+        "terms.s8.sub1.desc": "Là người dùng JDChat, bạn bị cấm tạo, sao chép hoặc đăng nội dung vi phạm hiến pháp, gây nguy hại an ninh quốc gia, vu khống người khác hoặc phát tán tin đồn.",
+        "terms.s8.sub2.title": "(2) Quy tắc sử dụng phần mềm",
+        "terms.s8.sub2.desc": "Bạn đồng ý không can thiệp hoặc làm hỏng bất kỳ phần mềm, phần cứng hoặc thiết bị truyền thông nào, và không sử dụng phần mềm hoặc plugin bên thứ ba trái phép.",
+        "terms.s8.sub3.title": "(3) Quy tắc hành vi",
+        "terms.s8.sub3.desc": "Bạn không được gửi thông tin sai, lừa đảo người khác, xâm phạm quyền người khác hoặc tham gia bất kỳ hoạt động bất hợp pháp nào.",
 
         // Section 9: Service Fees
-        "terms.s9.title": "9. Phi dich vu",
-        "terms.s9.p1": "Bat ky dich vu dung thu mien phi nao khong duoc coi la JDChat tu bo quyen thu phi. JDChat co the thong bao tieu chuan phi truoc 7 ngay.",
-        "terms.s9.p2": "JDChat co quyen dieu chinh phi voi thong bao truoc 7 ngay ma khong can su dong y cua ban.",
-        "terms.s9.p3": "Ban chiu trach nhiem ve phi internet, du lieu va cac phi truyen thong cua ben thu ba khac.",
+        "terms.s9.title": "9. Phí dịch vụ",
+        "terms.s9.p1": "Bất kỳ dịch vụ dùng thử miễn phí nào không được coi là JDChat từ bỏ quyền thu phí. JDChat có thể thông báo tiêu chuẩn phí trước 7 ngày.",
+        "terms.s9.p2": "JDChat có quyền điều chỉnh phí với thông báo trước 7 ngày mà không cần sự đồng ý của bạn.",
+        "terms.s9.p3": "Bạn chịu trách nhiệm về phí internet, dữ liệu và các phí truyền thông của bên thứ ba khác.",
 
         // Section 10: Service Termination
-        "terms.s10.title": "10. Dinh chi hoac cham dut dich vu",
-        "terms.s10.p1": "Do tinh chat dac biet cua dich vu internet, JDChat co the thay doi, dinh chi hoac cham dut tat ca hoac mot phan dich vu voi thong bao tren trang web.",
-        "terms.s10.p2": "Ban hieu rang JDChat co the bao tri thiet bi dinh ky va khong chiu trach nhiem cho gian doan dich vu voi thong bao truoc.",
+        "terms.s10.title": "10. Đình chỉ hoặc chấm dứt dịch vụ",
+        "terms.s10.p1": "Do tính chất đặc biệt của dịch vụ internet, JDChat có thể thay đổi, đình chỉ hoặc chấm dứt tất cả hoặc một phần dịch vụ với thông báo trên trang web.",
+        "terms.s10.p2": "Bạn hiểu rằng JDChat có thể bảo trì thiết bị định kỳ và không chịu trách nhiệm cho gián đoạn dịch vụ với thông báo trước.",
 
         // Section 11: Privacy Policy
-        "terms.s11.title": "11. Chinh sach bao mat",
-        "terms.s11.p1": "JDChat co gang thuc hien cac bien phap bao mat vat ly, dien tu va quan ly hop ly de bao ve thong tin cua ban khoi tiet lo, hu hong hoac mat mat.",
-        "terms.s11.p2": "Ban chiu trach nhiem bao ve thiet bi, tai khoan va mat khau. Mat du lieu do loi ban la trach nhiem cua ban.",
-        "terms.s11.p3": "Xem Chinh sach bao mat JDChat de biet cac dieu khoan bao mat cu the.",
+        "terms.s11.title": "11. Chính sách bảo mật",
+        "terms.s11.p1": "JDChat cố gắng thực hiện các biện pháp bảo mật vật lý, điện tử và quản lý hợp lý để bảo vệ thông tin của bạn khỏi tiết lộ, hư hỏng hoặc mất mát.",
+        "terms.s11.p2": "Bạn chịu trách nhiệm bảo vệ thiết bị, tài khoản và mật khẩu. Mất dữ liệu do lỗi bạn là trách nhiệm của bạn.",
+        "terms.s11.p3": "Xem Chính sách bảo mật JDChat để biết các điều khoản bảo mật cụ thể.",
 
         // Section 12: Limited Liability
-        "terms.s12.title": "12. Trach nhiem gioi han",
-        "terms.s12.p1": "Dich vu duoc cung cap 'nguyen trang' ma khong co bat ky cam ket hoac bao dam nao ve tinh hieu qua, do chinh xac, do tin cay, on dinh, day du hoac kip thoi.",
-        "terms.s12.p2": "JDChat khong chiu trach nhiem cho gian doan dich vu do loi mang, loi thiet bi, loi he thong, mat dien, tan cong mang, dinh cong, bao loan, hoa hoan, thien tai, chien tranh hoac hanh dong chinh phu.",
-        "terms.s12.p3": "JDChat khong chiu trach nhiem cho thiet hai gian tiep bao gom mat loi nhuan hoac gian doan kinh doanh.",
-        "terms.s12.p4": "Ban hieu rang thong tin chia se co the bi sao chep hoac su dung boi nguoi khac, va ban chiu moi rui ro nhu vay.",
+        "terms.s12.title": "12. Trách nhiệm giới hạn",
+        "terms.s12.p1": "Dịch vụ được cung cấp 'nguyên trạng' mà không có bất kỳ cam kết hoặc bảo đảm nào về tính hiệu quả, độ chính xác, độ tin cậy, ổn định, đầy đủ hoặc kịp thời.",
+        "terms.s12.p2": "JDChat không chịu trách nhiệm cho gián đoạn dịch vụ do lỗi mạng, lỗi thiết bị, lỗi hệ thống, mất điện, tấn công mạng, đình công, bạo loạn, hỏa hoạn, thiên tai, chiến tranh hoặc hành động chính phủ.",
+        "terms.s12.p3": "JDChat không chịu trách nhiệm cho thiệt hại gián tiếp bao gồm mất lợi nhuận hoặc gián đoạn kinh doanh.",
+        "terms.s12.p4": "Bạn hiểu rằng thông tin chia sẻ có thể bị sao chép hoặc sử dụng bởi người khác, và bạn chịu mọi rủi ro như vậy.",
 
         // Section 13: Dispute Resolution
-        "terms.s13.title": "13. Giai quyet tranh chap",
-        "terms.s13.p1": "Viec giai thich va ap dung thoa thuan nay se duoc dieu chinh boi phap luat cua nuoc Cong hoa Nhan dan Trung Hoa.",
-        "terms.s13.p2": "Neu bat ky dieu khoan nao bi coi la khong hop le, cac dieu khoan con lai van co hieu luc.",
+        "terms.s13.title": "13. Giải quyết tranh chấp",
+        "terms.s13.p1": "Việc giải thích và áp dụng thỏa thuận này sẽ được điều chỉnh bởi pháp luật của nước Cộng hòa Nhân dân Trung Hoa.",
+        "terms.s13.p2": "Nếu bất kỳ điều khoản nào bị coi là không hợp lệ, các điều khoản còn lại vẫn có hiệu lực.",
 
         // Section 14: Contact
-        "terms.s14.title": "14. Thong tin lien he",
-        "terms.s14.intro": "Ban co the lien he voi chung toi thong qua phan Gioi thieu - Dich vu khach hang trong ung dung JDChat hoac qua dien thoai va email.",
-        "terms.s14.address": "Dia chi",
-        "terms.s14.addressValue": "B91, Tang 13, Toa nha 1, Don vi 1, Trung tam thuong mai Vanke Golden Domain, So 29 Duong Fangji, Pho Yangyuan, Quan Wuchang, Thanh pho Vu Han, Tinh Ho Bac, Trung Quoc",
+        "terms.s14.title": "14. Thông tin liên hệ",
+        "terms.s14.intro": "Bạn có thể liên hệ với chúng tôi thông qua phần Giới thiệu - Dịch vụ khách hàng trong ứng dụng JDChat hoặc qua điện thoại và email.",
+        "terms.s14.address": "Địa chỉ",
+        "terms.s14.addressValue": "B91, Tầng 13, Tòa nhà 1, Đơn vị 1, Trung tâm thương mại Vanke Golden Domain, Số 29 Đường Fangji, Phố Yangyuan, Quận Wuchang, Thành phố Vũ Hán, Tỉnh Hồ Bắc, Trung Quốc",
         "terms.s14.email": "Email"
     }
 }
