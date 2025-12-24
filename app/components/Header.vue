@@ -38,6 +38,12 @@ const selectLang = async (langCode) => {
     localStorage.setItem('jdchat_lang', langCode);
     document.documentElement.lang = langCode;
     isDropdownOpen.value = false;
+    
+    // Update URL query param if it exists
+    const route = useRoute();
+    if (route.query.lang) {
+        router.replace({ query: { ...route.query, lang: langCode } });
+    }
 }
 
 const closeDropdownOnOutsideClick = (event) => {
@@ -50,10 +56,16 @@ const closeDropdownOnOutsideClick = (event) => {
 // Close menu on route change
 let unregisterGuard;
 onMounted(async () => {
-    const saved = localStorage.getItem('jdchat_lang');
+    // Check cookie first (set by URL param via server middleware)
+    const cookieValue = useCookie('jdchat_lang').value;
+    const saved = cookieValue || localStorage.getItem('jdchat_lang');
     if (saved && saved !== locale.value) {
         await setLocale(saved);
         selectedLang.value = saved;
+        // Sync localStorage with cookie value
+        if (cookieValue) {
+            localStorage.setItem('jdchat_lang', cookieValue);
+        }
     }
     unregisterGuard = router.afterEach(() => {
         closeMenu();

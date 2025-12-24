@@ -1,43 +1,43 @@
 import process from 'node:process';globalThis._importMeta_={url:import.meta.url,env:process.env};import { tmpdir } from 'node:os';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, getResponseStatus, createError, getCookie, setCookie, removeResponseHeader, getQuery as getQuery$1, readBody, getRouterParam, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatusText } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/h3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, getResponseStatus, createError, getCookie, setCookie, removeResponseHeader, getQuery as getQuery$1, getHeader, readBody, getRouterParam, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatusText } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/h3/dist/index.mjs';
 import { Server } from 'node:http';
 import { resolve, dirname, join } from 'node:path';
 import nodeCrypto from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { escapeHtml } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/@vue/shared/dist/shared.cjs.js';
-import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, joinRelativeURL, parsePath, withLeadingSlash, withTrailingSlash, decodePath, withoutTrailingSlash } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/ufo/dist/index.mjs';
-import destr, { destr as destr$1 } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/destr/dist/index.mjs';
-import { createHooks } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/hookable/dist/index.mjs';
-import { createFetch, Headers as Headers$1 } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/ofetch/dist/node.mjs';
-import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/node-mock-http/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/unstorage/drivers/fs.mjs';
-import { digest } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/ohash/dist/index.mjs';
-import { klona } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/klona/dist/index.mjs';
-import defu, { defuFn, createDefu } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/defu/dist/defu.mjs';
-import { snakeCase } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/scule/dist/index.mjs';
-import { getContext } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/unctx/dist/index.mjs';
-import { toRouteMatcher, createRouter } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/radix3/dist/index.mjs';
+import { escapeHtml } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/@vue/shared/dist/shared.cjs.js';
+import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, joinRelativeURL, parsePath, withLeadingSlash, withTrailingSlash, decodePath, withoutTrailingSlash } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/ufo/dist/index.mjs';
+import destr, { destr as destr$1 } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/destr/dist/index.mjs';
+import { createHooks } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/hookable/dist/index.mjs';
+import { createFetch, Headers as Headers$1 } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/ofetch/dist/node.mjs';
+import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/node-mock-http/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/unstorage/drivers/fs.mjs';
+import { digest } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/ohash/dist/index.mjs';
+import { klona } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/klona/dist/index.mjs';
+import defu, { defuFn, createDefu } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/defu/dist/defu.mjs';
+import { snakeCase } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/scule/dist/index.mjs';
+import { getContext } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/unctx/dist/index.mjs';
+import { toRouteMatcher, createRouter } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/radix3/dist/index.mjs';
 import { readFile } from 'node:fs/promises';
-import consola, { consola as consola$1 } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/consola/dist/index.mjs';
-import { ErrorParser } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/youch-core/build/index.js';
-import { Youch } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/youch/build/index.js';
-import { SourceMapConsumer } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/source-map/source-map.js';
-import { createRouterMatcher } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/vue-router/vue-router.node.mjs';
+import consola, { consola as consola$1 } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/consola/dist/index.mjs';
+import { ErrorParser } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/youch-core/build/index.js';
+import { Youch } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/youch/build/index.js';
+import { SourceMapConsumer } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/source-map/source-map.js';
+import { createRouterMatcher } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/vue-router/vue-router.node.mjs';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { stringify, uneval } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/devalue/index.js';
-import { captureRawStackTrace, parseRawStackTrace } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/errx/dist/index.js';
-import { isVNode, toValue, isRef } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/vue/index.mjs';
+import { stringify, uneval } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/devalue/index.js';
+import { captureRawStackTrace, parseRawStackTrace } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/errx/dist/index.js';
+import { isVNode, toValue, isRef } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/vue/index.mjs';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname as dirname$1, resolve as resolve$1 } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/pathe/dist/index.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/unhead/dist/server.mjs';
+import { dirname as dirname$1, resolve as resolve$1 } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/pathe/dist/index.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/unhead/dist/server.mjs';
 import process$1 from 'node:process';
-import { renderToString } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/vue/server-renderer/index.mjs';
-import { walkResolver } from 'file:///Users/nguyenngockhanh/Downloads/vue-app/node_modules/unhead/dist/utils.mjs';
+import { renderToString } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/vue/server-renderer/index.mjs';
+import { walkResolver } from 'file:///Users/nguyenngockhanh/projects/flux-homesite/node_modules/unhead/dist/utils.mjs';
 
-const serverAssets = [{"baseName":"server","dir":"/Users/nguyenngockhanh/Downloads/vue-app/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/Users/nguyenngockhanh/projects/flux-homesite/server/assets"}];
 
 const assets$1 = createStorage();
 
@@ -49,11 +49,11 @@ const storage$1 = createStorage({});
 
 storage$1.mount('/assets', assets$1);
 
-storage$1.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/nguyenngockhanh/Downloads/vue-app","watchOptions":{"ignored":[null]}}));
-storage$1.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/nguyenngockhanh/Downloads/vue-app/server","watchOptions":{"ignored":[null]}}));
-storage$1.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/nguyenngockhanh/Downloads/vue-app/.nuxt"}));
-storage$1.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/nguyenngockhanh/Downloads/vue-app/.nuxt/cache"}));
-storage$1.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/nguyenngockhanh/Downloads/vue-app/.data/kv"}));
+storage$1.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/nguyenngockhanh/projects/flux-homesite","watchOptions":{"ignored":[null]}}));
+storage$1.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/nguyenngockhanh/projects/flux-homesite/server","watchOptions":{"ignored":[null]}}));
+storage$1.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/nguyenngockhanh/projects/flux-homesite/.nuxt"}));
+storage$1.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/nguyenngockhanh/projects/flux-homesite/.nuxt/cache"}));
+storage$1.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/nguyenngockhanh/projects/flux-homesite/.data/kv"}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage$1, base) : storage$1;
@@ -672,16 +672,7 @@ const _inlineRuntimeConfig = {
           "language": ""
         }
       ],
-      "detectBrowserLanguage": {
-        "alwaysRedirect": false,
-        "cookieCrossOrigin": false,
-        "cookieDomain": "",
-        "cookieKey": "jdchat_lang",
-        "cookieSecure": false,
-        "fallbackLocale": "zh",
-        "redirectOn": "root",
-        "useCookie": true
-      },
+      "detectBrowserLanguage": false,
       "experimental": {
         "localeDetector": "",
         "typedPages": true,
@@ -1416,7 +1407,7 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _i77tt_XVdr1RI6Cd5jePc7nkerAe0ihhFmYaoyxIvC8 = (function(nitro) {
+const _NiDVK5atKcslELEuMG78JlQGwwA7etuKZFNt_Yqy1Dg = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
@@ -1530,21 +1521,21 @@ const localeCodes =  [
 const localeLoaders = {
   zh: [
     {
-      key: "locale_zh_46json_0af17d20",
+      key: "locale_zh_46json_f2bb9305",
       load: () => Promise.resolve().then(function () { return zh$1; }),
       cache: true
     }
   ],
   en: [
     {
-      key: "locale_en_46json_99eeb786",
+      key: "locale_en_46json_cbc35189",
       load: () => Promise.resolve().then(function () { return en$1; }),
       cache: true
     }
   ],
   vi: [
     {
-      key: "locale_vi_46json_919fccfc",
+      key: "locale_vi_46json_ae893520",
       load: () => Promise.resolve().then(function () { return vi$1; }),
       cache: true
     }
@@ -1949,7 +1940,7 @@ function* detect(detectors, detection, path) {
   }
   yield { locale: detection.fallbackLocale, source: "fallback" };
 }
-const _nTFSgXj5ZHYfrbyAeWIB0HiOoyALVppB31Yotzt0GKA = defineNitroPlugin(async (nitro) => {
+const _HhXB3vCN5MlWD55LNZC9zKQljJ9E9Xc7OcXtzK7g = defineNitroPlugin(async (nitro) => {
   const runtimeI18n = useRuntimeI18n();
   const rootRedirect = resolveRootRedirect(runtimeI18n.rootRedirect);
   runtimeI18n.defaultLocale || "";
@@ -2031,7 +2022,7 @@ const _nTFSgXj5ZHYfrbyAeWIB0HiOoyALVppB31Yotzt0GKA = defineNitroPlugin(async (ni
     const localeSegment = detector.route(event.path);
     const pathLocale = isSupportedLocale(localeSegment) && localeSegment || void 0;
     const path = (pathLocale && url.pathname.slice(pathLocale.length + 1)) ?? url.pathname;
-    if (!url.pathname.includes("/_i18n/-Rmd1BFh") && !isExistingNuxtRoute(path)) {
+    if (!url.pathname.includes("/_i18n/_DmGfErh") && !isExistingNuxtRoute(path)) {
       return;
     }
     const resolved = resolveRedirectPath(event, path, pathLocale, ctx.vueI18nOptions.defaultLocale, detector);
@@ -2051,14 +2042,14 @@ const _nTFSgXj5ZHYfrbyAeWIB0HiOoyALVppB31Yotzt0GKA = defineNitroPlugin(async (ni
   });
 });
 
-const rootDir = "/Users/nguyenngockhanh/Downloads/vue-app";
+const rootDir = "/Users/nguyenngockhanh/projects/flux-homesite";
 
 const devReducers = {
   VNode: (data) => isVNode(data) ? { type: data.type, props: data.props } : void 0,
   URL: (data) => data instanceof URL ? data.toString() : void 0
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _erdJcAwiqkjv5tIFXvR7XglKxpFpCRE_dcyNjVm0xw = (nitroApp) => {
+const _lFTMR69O9p2Vr5nIJokxga7CiQR51sDVerjw1okVI = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -2128,12 +2119,27 @@ function onConsoleLog(callback) {
 }
 
 const plugins = [
-  _i77tt_XVdr1RI6Cd5jePc7nkerAe0ihhFmYaoyxIvC8,
-_nTFSgXj5ZHYfrbyAeWIB0HiOoyALVppB31Yotzt0GKA,
-_erdJcAwiqkjv5tIFXvR7XglKxpFpCRE_dcyNjVm0xw
+  _NiDVK5atKcslELEuMG78JlQGwwA7etuKZFNt_Yqy1Dg,
+_HhXB3vCN5MlWD55LNZC9zKQljJ9E9Xc7OcXtzK7g,
+_lFTMR69O9p2Vr5nIJokxga7CiQR51sDVerjw1okVI
 ];
 
-const assets = {};
+const assets = {
+  "/index.mjs": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"35df8-Rr0A8Nxp0HAfuZJiZBBViXibcIQ\"",
+    "mtime": "2025-12-24T03:45:31.205Z",
+    "size": 220664,
+    "path": "index.mjs"
+  },
+  "/index.mjs.map": {
+    "type": "application/json",
+    "etag": "\"69801-q8wFIlnmWq0n+WX5jX3Y2briKBw\"",
+    "mtime": "2025-12-24T03:45:31.205Z",
+    "size": 432129,
+    "path": "index.mjs.map"
+  }
+};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
@@ -2158,7 +2164,7 @@ function getAsset (id) {
 
 const METHODS = /* @__PURE__ */ new Set(["HEAD", "GET"]);
 const EncodingMap = { gzip: ".gz", br: ".br" };
-const _SRgOVR = eventHandler((event) => {
+const _xB7RFm = eventHandler((event) => {
   if (event.method && !METHODS.has(event.method)) {
     return;
   }
@@ -2222,6 +2228,48 @@ const _SRgOVR = eventHandler((event) => {
   return readAsset(id);
 });
 
+const _TXcsAv = defineEventHandler((event) => {
+  const query = getQuery$1(event);
+  const langParam = query.lang;
+  const availableLocales = ["zh", "en", "vi"];
+  const cookieName = "jdchat_lang";
+  const defaultLocale = "en";
+  if (langParam && availableLocales.includes(langParam)) {
+    setCookie(event, cookieName, langParam, {
+      path: "/",
+      maxAge: 60 * 60 * 24 * 365
+      // 1 year
+    });
+    return;
+  }
+  const existingCookie = getCookie(event, cookieName);
+  if (existingCookie && availableLocales.includes(existingCookie)) {
+    return;
+  }
+  const acceptLanguage = getHeader(event, "accept-language");
+  if (acceptLanguage) {
+    const languages = acceptLanguage.split(",").map((lang) => {
+      const [code, q = "q=1"] = lang.trim().split(";");
+      const quality = parseFloat(q.replace("q=", "")) || 1;
+      const primaryCode = code.split("-")[0].toLowerCase();
+      return { code: primaryCode, quality };
+    }).sort((a, b) => b.quality - a.quality);
+    for (const lang of languages) {
+      if (availableLocales.includes(lang.code)) {
+        setCookie(event, cookieName, lang.code, {
+          path: "/",
+          maxAge: 60 * 60 * 24 * 365
+        });
+        return;
+      }
+    }
+  }
+  setCookie(event, cookieName, defaultLocale, {
+    path: "/",
+    maxAge: 60 * 60 * 24 * 365
+  });
+});
+
 const VueResolver = (_, value) => {
   return isRef(value) ? toValue(value) : value;
 };
@@ -2282,8 +2330,8 @@ function setSSRError(ssrContext, error) {
 
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
 const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
-const getServerEntry = () => import('file:///Users/nguyenngockhanh/Downloads/vue-app/.nuxt//dist/server/server.mjs').then((r) => r.default || r);
-const getClientManifest = () => import('file:///Users/nguyenngockhanh/Downloads/vue-app/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file:///Users/nguyenngockhanh/projects/flux-homesite/.nuxt//dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('file:///Users/nguyenngockhanh/projects/flux-homesite/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const createSSRApp = await getServerEntry();
   if (!createSSRApp) {
@@ -2646,16 +2694,17 @@ defineCachedEventHandler(_cachedMessageLoader, {
   swr: false,
   getKey: (event) => [getRouterParam(event, "locale") ?? "null", getRouterParam(event, "hash") ?? "null"].join("-")
 });
-const _YuFYg8 = _messagesHandler ;
+const _nzetet = _messagesHandler ;
 
-const _lazy_OL9R0b = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_WPXGj3 = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '', handler: _SRgOVR, lazy: false, middleware: true, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_OL9R0b, lazy: true, middleware: false, method: undefined },
+  { route: '', handler: _xB7RFm, lazy: false, middleware: true, method: undefined },
+  { route: '', handler: _TXcsAv, lazy: false, middleware: true, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_WPXGj3, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
-  { route: '/_i18n/:hash/:locale/messages.json', handler: _YuFYg8, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_OL9R0b, lazy: true, middleware: false, method: undefined }
+  { route: '/_i18n/:hash/:locale/messages.json', handler: _nzetet, lazy: false, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_WPXGj3, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {

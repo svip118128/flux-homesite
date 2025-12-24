@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/style.css'],
 
   i18n: {
+    langDir: 'locales',
     locales: [
       { code: 'zh', name: '中文', file: 'zh.json' },
       { code: 'en', name: 'English', file: 'en.json' },
@@ -15,10 +16,10 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'zh',
     strategy: 'no_prefix',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'jdchat_lang',
-      fallbackLocale: 'zh'
+    detectBrowserLanguage: false,
+    bundle: {
+      fullInstall: true,
+      dropMessageCompiler: false
     }
   },
 
