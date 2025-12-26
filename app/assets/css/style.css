@@ -134,6 +134,22 @@ a:hover {
 
   .mobile-lang-dropdown .lang-menu {
     width: 100%;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.2);
+    margin-top: 0;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobile-lang-dropdown .lang-menu.open {
+    display: block;
+    transform: none;
   }
 
   .mobile-lang-dropdown .lang-option {
