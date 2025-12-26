@@ -14,7 +14,7 @@ export default defineNuxtConfig({
       { code: 'en', name: 'English', file: 'en.json' },
       { code: 'vi', name: 'Tiếng Việt', file: 'vi.json' }
     ],
-    defaultLocale: 'zh',
+    defaultLocale: 'en',
     strategy: 'no_prefix',
     detectBrowserLanguage: false,
     bundle: {

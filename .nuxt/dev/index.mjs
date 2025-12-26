@@ -651,7 +651,7 @@ const _inlineRuntimeConfig = {
   "public": {
     "i18n": {
       "baseUrl": "",
-      "defaultLocale": "zh",
+      "defaultLocale": "en",
       "rootRedirect": "",
       "redirectStatusCode": 302,
       "skipSettingLocaleOnNavigate": false,
@@ -2022,7 +2022,7 @@ const _5eLs6QmfOK3_vviQtiBww5436jnhkLtM0Zo32UVrEc = defineNitroPlugin(async (nit
     const localeSegment = detector.route(event.path);
     const pathLocale = isSupportedLocale(localeSegment) && localeSegment || void 0;
     const path = (pathLocale && url.pathname.slice(pathLocale.length + 1)) ?? url.pathname;
-    if (!url.pathname.includes("/_i18n/aVowAvtx") && !isExistingNuxtRoute(path)) {
+    if (!url.pathname.includes("/_i18n/VhROWf8s") && !isExistingNuxtRoute(path)) {
       return;
     }
     const resolved = resolveRedirectPath(event, path, pathLocale, ctx.vueI18nOptions.defaultLocale, detector);
