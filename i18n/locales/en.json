@@ -172,7 +172,7 @@
   "func.platform": "Open Platform",
   "func.platform.desc": "Bot, Webhook, OpenAPI",
   "func.multi": "Multi-platform",
-  "func.multi.desc": "iOS/Android/Windows/macOS",
+  "func.multi.desc": "iOS / Android / Windows / macOS",
   "faq.q2": "How to deploy on-premise?",
   "faq.a2": "Supports containerized deployment (Docker Compose/K8s), scale as needed.",
   "help.item1": "How to create teams and channels?",

@@ -172,7 +172,7 @@
   "func.platform": "Nền tảng mở",
   "func.platform.desc": "Bot, Webhook, OpenAPI",
   "func.multi": "Đa nền tảng",
-  "func.multi.desc": "iOS/Android/Windows/macOS",
+  "func.multi.desc": "iOS / Android / Windows / macOS",
   "faq.q2": "Làm sao để triển khai riêng?",
   "faq.a2": "Hỗ trợ triển khai container (Docker Compose/K8s), mở rộng theo nhu cầu.",
   "help.item1": "Cách tạo nhóm và kênh?",
