@@ -61,6 +61,14 @@ const closeDropdownOnOutsideClick = (event) => {
 // Close menu on route change
 let unregisterGuard;
 onMounted(async () => {
+    // Check for query param first
+    const route = useRoute();
+    if (route.query.lang) {
+        // If query param exists, we don't restore from cookie/storage
+        // as the plugin/lang-sync already handled it
+        return;
+    }
+
     // Check cookie first (set by URL param via server middleware)
     const cookieValue = useCookie('jdchat_lang').value;
     const saved = cookieValue || localStorage.getItem('jdchat_lang');

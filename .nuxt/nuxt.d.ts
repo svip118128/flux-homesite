@@ -1,13 +1,13 @@
 /// <reference types="@nuxtjs/i18n" />
-/// <reference types="@nuxt/telemetry" />
 /// <reference types="@nuxt/devtools" />
+/// <reference types="@nuxt/telemetry" />
 /// <reference path="types/builder-env.d.ts" />
 /// <reference path="types/plugins.d.ts" />
 /// <reference path="types/build.d.ts" />
 /// <reference path="types/app.config.d.ts" />
 /// <reference path="types/runtime-config.d.ts" />
 /// <reference types="nuxt/app" />
-/// <reference types="/Users/nguyenngockhanh/projects/flux-homesite/node_modules/@nuxt/nitro-server/dist/index.mjs" />
+/// <reference types="/Users/nguyenngockhanh/projects/flux-homesite copy/node_modules/@nuxt/nitro-server/dist/index.mjs" />
 /// <reference path="types/i18n-plugin.d.ts" />
 /// <reference types="vue-router" />
 /// <reference path="types/middleware.d.ts" />
