@@ -88,7 +88,7 @@ watch(locale, (newVal) => {
   <header class="site-header">
         <div class="container row">
             <NuxtLink class="logo" to="/" aria-label="Jdchat">
-                <img src="/assets/img/logo.png" alt="Jdchat" style="height: 32px; width: auto;">
+                <img src="/assets/img/logo.png" alt="Jdchat" style="height: 48px; width: auto;">
             </NuxtLink>
             <nav class="nav" :class="{ 'active': isMenuOpen }" aria-label="Main Navigation"> 
                 <NuxtLink to="/" active-class="active">{{ $t("nav.home") }}</NuxtLink>
