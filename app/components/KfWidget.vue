@@ -4,7 +4,7 @@ import { useI18n } from 'vue-i18n';
 
 const props = defineProps({
   telegram: { type: String, default: '' },
-  email: { type: String, default: 'hello@jdchat.app' },
+  email: { type: String, default: 'service@jdchat.im' },
   docsUrl: { type: String, default: '/help' },
   faqUrl: { type: String, default: '/faq' },
   wsUrl: { type: String, default: '' },

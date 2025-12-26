@@ -7,6 +7,6 @@
   <KfWidget 
     telegram="@JDchat_bot" 
     ws-url="wss://test.jdchat.im/ws" 
-    email="hello@jdchat.app"
+    email="service@jdchat.im"
   />
 </template>

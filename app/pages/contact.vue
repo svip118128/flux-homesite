@@ -20,7 +20,7 @@
           :placeholder="$t('contact.placeholder')"></textarea></div>
       <div style="margin-top:12px; display: flex; gap: 12px;">
         <button class="btn primary" type="submit" style="flex: 1;">{{ $t("contact.submit") }}</button> 
-        <a class="btn" href="mailto:hello@jdchat.app" style="flex: 1; text-align: center;">{{ $t("contact.emailDirect") }}</a>
+        <a class="btn" href="mailto:service@jdchat.im" style="flex: 1; text-align: center;">{{ $t("contact.emailDirect") }}</a>
       </div>
     </form>
     <p class="small notice" style="margin-top:12px">{{ $t("contact.notice") }}</p>

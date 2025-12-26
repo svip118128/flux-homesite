@@ -767,7 +767,7 @@
         } catch (e) { }
       }
       const body = encodeURIComponent(Object.entries(data).map(([k, v]) => `${k}: ${v}`).join('\\n'));
-      location.href = `mailto:hello@jdchat.example?subject=Jdchat Inquiry&body=${body}`;
+      location.href = `mailto:service@jdchat.im?subject=Jdchat Inquiry&body=${body}`;
     });
   }
 

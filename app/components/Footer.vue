@@ -3,7 +3,7 @@
         <div class="container cols">
             <div>
                 <div class="kicker">{{ $t("footer.cta") }}</div>
-                <div class="small">hello@jdchat.example</div>
+                <div class="small">service@jdchat.im</div>
                 <div class="small">{{ $t("footer.rights") }}</div>
                 <div style="margin-top:8px">
                     <NuxtLink to="/contact">
