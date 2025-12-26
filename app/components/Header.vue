@@ -36,6 +36,11 @@ const selectLang = async (langCode) => {
     await setLocale(langCode);
     selectedLang.value = langCode;
     localStorage.setItem('jdchat_lang', langCode);
+    
+    // Update cookie to persist across reloads (prevents server middleware from overwriting)
+    const langCookie = useCookie('jdchat_lang', { maxAge: 60 * 60 * 24 * 365, path: '/' });
+    langCookie.value = langCode;
+    
     document.documentElement.lang = langCode;
     isDropdownOpen.value = false;
     
