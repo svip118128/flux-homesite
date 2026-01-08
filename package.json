@@ -20,5 +20,8 @@
   },
   "optionalDependencies": {
     "@oxc-parser/binding-darwin-arm64": "^0.105.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3"
   }
 }
