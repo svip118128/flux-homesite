@@ -1,5 +1,6 @@
-import { readdir } from 'fs/promises'
-import { join } from 'path'
+import { downloadUrls } from "~~/server/config/downloads"
+
+const DOWNLOAD_MODE: 'redirect' | 'proxy' = 'redirect'
 
 export default defineEventHandler(async (event) => {
   const platform = getRouterParam(event, 'platform')
@@ -21,6 +22,7 @@ export default defineEventHandler(async (event) => {
     })
   }
 
+  // Determine folder name based on platform and architecture
   let folderName = ''
   
   if (normalizedPlatform === 'windows') {
@@ -32,7 +34,7 @@ export default defineEventHandler(async (event) => {
     } else if (archLower === 'arm64') {
       folderName = 'win64-arm' 
     } else {
-      folderName = 'win64'
+      folderName = 'win64' // Default
     }
   } else if (normalizedPlatform === 'mac' || normalizedPlatform === 'macos') {
     normalizedPlatform = 'mac' // normalize
@@ -42,7 +44,7 @@ export default defineEventHandler(async (event) => {
     } else if (archLower === 'intel' || archLower === 'x64' || archLower === 'amd64') {
       folderName = 'intel'
     } else {
-      folderName = 'silicon' 
+      folderName = 'silicon' // Default
     }
   } else {
     throw createError({
@@ -51,72 +53,69 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  const findFile = async (dir: string): Promise<string | null> => {
-    try {
-      const files = await readdir(dir)
-      const allowedExtensions = normalizedPlatform === 'windows' 
-        ? ['.rar', '.exe', '.msi', '.zip'] 
-        : ['.zip', '.dmg']
-      
-      const file = files.find(f => {
-        if (f.startsWith('.')) return false
-        const ext = f.toLowerCase().substring(f.lastIndexOf('.'))
-        return allowedExtensions.includes(ext)
-      })
-      return file || null
-    } catch {
-      return null
-    }
-  }
-
-  const tryFallback = async (): Promise<string | null> => {
-    if (normalizedPlatform === 'windows' && folderName === 'win64-arm') {
-      const fallbackDir = join(process.cwd(), 'public', 'files', normalizedPlatform, 'win64')
-      return await findFile(fallbackDir)
-    }
-    return null
-  }
-
-  const dirParts = [process.cwd(), 'public', 'files', normalizedPlatform]
-  if (folderName) {
-    dirParts.push(folderName)
-  }
-  const filesDir = join(...dirParts)
-  
-  try {
-    const file = await findFile(filesDir)
-    
-    if (file) {
-      const filePath = folderName 
-        ? `/files/${normalizedPlatform}/${folderName}/${file}`
-        : `/files/${normalizedPlatform}/${file}`
-      return sendRedirect(event, filePath, 302)
-    }
-
-    const fallbackFile = await tryFallback()
-    if (fallbackFile) {
-      const filePath = `/files/${normalizedPlatform}/win64/${fallbackFile}`
-      return sendRedirect(event, filePath, 302)
-    }
-    
+  // Get download config from remote URLs
+  const platformConfig = downloadUrls[normalizedPlatform]
+  if (!platformConfig) {
     throw createError({
       statusCode: 404,
-      message: 'Download file not found'
+      message: 'Platform not found in download configuration'
+    })
+  }
+
+  let downloadConfig = platformConfig[folderName]
+  
+  // Fallback for Windows ARM to x64
+  if (!downloadConfig && normalizedPlatform === 'windows' && folderName === 'win64-arm') {
+    downloadConfig = platformConfig['win64']
+  }
+
+  if (!downloadConfig || !downloadConfig.url) {
+    throw createError({
+      statusCode: 404,
+      message: 'Download not available for this platform/architecture'
+    })
+  }
+
+  // Mode 1: Simple redirect to remote URL (recommended for CDN)
+  if (DOWNLOAD_MODE === 'redirect') {
+    return sendRedirect(event, downloadConfig.url, 302)
+  }
+
+  // Mode 2: Proxy/Stream through server (for analytics, tracking)
+  try {
+    const response = await fetch(downloadConfig.url)
+    
+    if (!response.ok) {
+      throw createError({
+        statusCode: response.status,
+        message: 'Failed to fetch download file from remote server'
+      })
+    }
+
+    // Set appropriate headers
+    const headers: Record<string, string> = {
+      'Content-Type': response.headers.get('content-type') || 'application/octet-stream',
+      'Content-Disposition': `attachment; filename="${downloadConfig.filename || 'download'}"`
+    }
+
+    const contentLength = response.headers.get('content-length')
+    if (contentLength) {
+      headers['Content-Length'] = contentLength
+    }
+
+    // Stream the file
+    return new Response(response.body, {
+      status: 200,
+      headers
     })
   } catch (error: any) {
     if (error.statusCode) {
       throw error
     }
     
-    const fallbackFile = await tryFallback()
-    if (fallbackFile) {
-      const filePath = `/files/${normalizedPlatform}/win64/${fallbackFile}`
-      return sendRedirect(event, filePath, 302)
-    }
-    
     throw createError({
-      statusCode: 404,
-      message: `Download not found: ${error.message}`
+      statusCode: 500,
+      message: `Download error: ${error.message || 'Unknown error'}`
     })
   }
 })
