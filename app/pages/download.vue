@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue';
 import { useOSDetection } from '~/composables';
+import { downloadUrls, androidDownloadUrl, iosDownloadUrl } from '~/config/downloads';
+
 const { osInfo } = useOSDetection();
 const selectedPlatform = ref<string>("windows");
 
@@ -23,6 +25,18 @@ watch(() => osInfo.value.platform, (newPlatform) => {
   }
 },{immediate: true})
 
+// Map detected architecture to config keys
+const getWindowsArch = (arch: string | null): string => {
+  if (arch === 'arm64') return 'arm64';
+  if (arch === 'win32') return 'win32';
+  return 'win64'; // default
+}
+
+const getMacArch = (arch: string | null): string => {
+  if (arch === 'intel') return 'intel';
+  return 'silicon'; // default for Apple Silicon
+}
+
 const handleDownload = (e: Event, type?: string) => {
   e.preventDefault();
 
@@ -31,41 +45,38 @@ const handleDownload = (e: Event, type?: string) => {
     const arch = osInfo.value.architecture;
     
     if (platform === 'windows') {
-      let windowsArch = 'x64'; // default
-      if (arch === 'win64' || arch === 'x64' || arch === 'amd64') {
-        windowsArch = 'x64';
-      } else if (arch === 'win32' || arch === 'x86') {
-        windowsArch = 'x86';
-      } else if (arch === 'arm64') {
-        windowsArch = 'arm64';
+      const windowsArch = getWindowsArch(arch);
+      const config = downloadUrls.windows?.[windowsArch];
+      if (config?.url) {
+        window.location.href = config.url;
       }
-      const downloadUrl = `/api/download/windows/${windowsArch}`;
-      window.location.href = downloadUrl;
     } else if (platform === 'mac') {
-      let macArch = 'silicon'; // default
-      if (arch === 'silicon' || arch === 'arm64' || arch === 'arm') {
-        macArch = 'silicon';
-      } else if (arch === 'intel' || arch === 'x64' || arch === 'amd64') {
-        macArch = 'intel';
+      const macArch = getMacArch(arch);
+      const config = downloadUrls.mac?.[macArch];
+      if (config?.url) {
+        window.location.href = config.url;
       }
-      const downloadUrl = `/api/download/mac/${macArch}`;
-      window.location.href = downloadUrl;
     } else {
-      const downloadUrl = '/api/download/windows/x64';
-      window.location.href = downloadUrl;
+      // Default to Windows x64
+      const config = downloadUrls.windows?.win64;
+      if (config?.url) {
+        window.location.href = config.url;
+      }
     }
     return;
   }
   
   if (type === 'ios') {
-    const iosUrl = 'https://apps.apple.com/app/yourapp';
-    window.open(iosUrl, '_blank');
+    if (iosDownloadUrl?.url) {
+      window.open(iosDownloadUrl.url, '_blank');
+    }
     return;
   }
   
   if (type === 'android') {
-    const downloadUrl = '/api/download/android';
-    window.location.href = downloadUrl;
+    if (androidDownloadUrl?.url) {
+      window.location.href = androidDownloadUrl.url;
+    }
     return;
   }
   
