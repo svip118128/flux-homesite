@@ -3,6 +3,7 @@ import { ref, computed, watch } from 'vue';
 import { useOSDetection } from '~/composables';
 import { downloadUrls, androidDownloadUrl, iosDownloadUrl } from '~/config/downloads';
 
+const { t } = useI18n();
 const { osInfo } = useOSDetection();
 const selectedPlatform = ref<string>("windows");
 
@@ -67,16 +68,19 @@ const handleDownload = (e: Event, type?: string) => {
   }
   
   if (type === 'ios') {
-    if (iosDownloadUrl?.url) {
-      window.open(iosDownloadUrl.url, '_blank');
-    }
+    // if (iosDownloadUrl?.url) {
+    //   window.open(iosDownloadUrl.url, '_blank');
+    // }
+    alert(t('download.comingSoon'));
     return;
   }
   
   if (type === 'android') {
-    if (androidDownloadUrl?.url) {
-      window.location.href = androidDownloadUrl.url;
-    }
+    // if (androidDownloadUrl?.url) {
+    //   window.location.href = androidDownloadUrl.url;
+    // }
+    // window.open(androidDownloadUrl.url, '_blank');
+    alert(t('download.comingSoon'));
     return;
   }
   

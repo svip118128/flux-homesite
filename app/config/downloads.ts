@@ -44,7 +44,7 @@ export const downloadUrls: Record<string, Record<string, DownloadConfig>> = {
 }
 
 export const androidDownloadUrl: DownloadConfig = {
-    url: 'https://antitheft-server.onrender.com/api/products/antitheft/downloads/1.0/setup.exe',
+    url: 'https://play.google.com/store/apps/details?id=app.jdchat.me',
     version: '1.0.0',
     filename: 'jdchat-release-gw-1.0.0-20251226.apk'
 }
