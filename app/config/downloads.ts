@@ -50,6 +50,6 @@ export const androidDownloadUrl: DownloadConfig = {
 }
 
 export const iosDownloadUrl: DownloadConfig = {
-    url: 'https://apps.apple.com/app/yourapp',
+    url: 'https://apps.apple.com/us/app/jdchat/id6756490888',
     version: '1.0.0'
 }

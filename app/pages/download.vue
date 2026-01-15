@@ -68,19 +68,16 @@ const handleDownload = (e: Event, type?: string) => {
   }
   
   if (type === 'ios') {
-    // if (iosDownloadUrl?.url) {
-    //   window.open(iosDownloadUrl.url, '_blank');
-    // }
-    alert(t('download.comingSoon'));
+    if (iosDownloadUrl?.url) {
+      window.open(iosDownloadUrl.url, '_blank');
+    }
     return;
   }
   
   if (type === 'android') {
-    // if (androidDownloadUrl?.url) {
-    //   window.location.href = androidDownloadUrl.url;
-    // }
-    // window.open(androidDownloadUrl.url, '_blank');
-    alert(t('download.comingSoon'));
+    if (androidDownloadUrl?.url) {
+      window.open(androidDownloadUrl.url, '_blank');
+    }
     return;
   }
   
@@ -116,17 +113,17 @@ useHead({
 
     <div class="grid-3">
       <a class="card feature" href="#" @click="(e) => handleDownload(e, 'ios')">
-        <div class="icon"><img src="/assets/icons/download.svg" alt=""></div>
+        <div class="icon"><img src="/assets/icons/app-store.svg" alt=""></div>
         <div>
           <h3>{{ $t("download.card.ios") }}</h3>
-          <p>TestFlight</p>
+          <p>{{ $t("download.ios.description") }}</p>
         </div>
       </a>
       <a class="card feature" href="#" @click="(e) => handleDownload(e, 'android')">
-        <div class="icon"><img src="/assets/icons/download.svg" alt=""></div>
+        <div class="icon"><img src="/assets/icons/google-play-store.svg" alt=""></div>
         <div>
           <h3>{{ $t("download.card.android") }}</h3>
-          <p>arm64-v8a</p>
+          <p>{{ $t("download.android.description") }}</p>
         </div>
       </a>
       <a class="card feature" href="#" @click="(e) => handleDownload(e, 'desktop')">
