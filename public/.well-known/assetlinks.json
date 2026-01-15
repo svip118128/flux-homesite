@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "app.jdchat.me",
+    "sha256_cert_fingerprints":
+    ["06:B6:7C:C6:D1:B9:26:9A:55:68:23:58:64:8E:0D:32:3F:93:C6:76:AA:77:3F:DE:66:E2:0C:BB:E2:85:D8:3C"]
+  }
+}]
