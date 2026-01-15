@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue';
 import { useOSDetection } from '~/composables';
-import { downloadUrls, androidDownloadUrl, iosDownloadUrl } from '~/config/downloads';
+import { downloadUrls, androidDownloadUrl, iosDownloadUrl } from '~/config';
 
 const { t } = useI18n();
 const { osInfo } = useOSDetection();

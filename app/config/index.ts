@@ -1,10 +1,3 @@
-/**
- * Download URLs configuration
- * Store your files on CDN, Cloud Storage (S3, Azure Blob, etc.), or any remote server
- * 
- * This config is used client-side for SSG/CSR support
- */
-
 export interface DownloadConfig {
     url: string
     version?: string
@@ -53,3 +46,5 @@ export const iosDownloadUrl: DownloadConfig = {
     url: 'https://apps.apple.com/us/app/jdchat/id6756490888',
     version: '1.0.0'
 }
+
+export const customScheme = 'www.jdchat.im'
