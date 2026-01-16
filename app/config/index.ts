@@ -1,3 +1,7 @@
+import packageJson from '../../package.json'
+
+export const VERSION = packageJson.version
+
 export interface DownloadConfig {
     url: string
     version?: string
